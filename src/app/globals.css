@@ -29,6 +29,17 @@ body {
 }
 
 
+
+
+.para{
+  font-family:var(--cinzel1)
+
+}
+.head{
+  font-family:var(--cinzel)
+
+}
+
 .process::before {
     position: absolute;
     content: "";

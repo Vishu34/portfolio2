@@ -1,5 +1,5 @@
 "use client";
-import { Box, Button, Typography } from "@mui/material";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -36,10 +36,10 @@ const Desktopnavbar = () => {
           } `}
           style={{ zIndex: "99999" }}
         >
-          <Box className="flex justify-between items-center">
-          <Typography className="font-extrabold text-xl"> Vishu Sahu</Typography>
+          <div className="flex justify-between items-center">
+          <p className="font-extrabold text-xl head"> Vishu Sahu</p>
 
-            <ul className="flex items-center space-x-6">
+            <ul className="flex items-center space-x-6 para font-bold">
               <li className="navlist p-3 rounded-sm homelist">
               <Link href="#" className="hover:text-blue-500">Home</Link>
                
@@ -60,13 +60,12 @@ const Desktopnavbar = () => {
                <Link href="#" className="hover:text-blue-500">Contact</Link>
               </li>
               <li className="navlist p-3 rounded-sm">
-              <Button className="hover:bg-blue-400 bg-blue-500 text-white text-sm capitalize px-5 py-2 font-bold">
-              
+              <button className=" font-bold hover:bg-blue-400 bg-blue-500 text-white text-xs capitalize px-5 py-2  rounded-sm para">
               Download Cv
-            </Button>
+            </button>
               </li>
             </ul>
-          </Box>
+          </div>
         </div>
       </section>
     </>

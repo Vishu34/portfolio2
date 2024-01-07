@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Button, Typography } from "@mui/material";
+
 import Image from "next/image";
 import { Tilt } from "react-tilt";
 
@@ -19,8 +19,8 @@ const defaultOptions = {
 const About = () => {
   return (
     <>
-      <Box className="px-5 md:mx-auto w-[100%] md:w-[80%] py-10 my-10 " id="about">
-        <Box className="flex items-center space-x-2 justify-center">
+      <div className="px-5 md:mx-auto w-[100%] md:w-[80%] py-10 my-10 " id="about">
+        <div className="flex items-center space-x-2 justify-center">
           <Image
             src="/badge-line.svg"
             alt="image"
@@ -28,13 +28,13 @@ const About = () => {
             height={10000}
             className="w-10 h-20"
           />
-          <Typography className="font-extrabold text-xl text-blue-500 py-3">
+          <p className="font-extrabold text-xl text-blue-500 py-3 head">
             About Me
-          </Typography>
-        </Box>
+          </p>
+        </div>
 
-        <Box className="md:flex justify-around items-center md:space-x-5 space-y-5 md:space-y-0 w-[100%]">
-          <Box className="relative w-[100%] md:w-[50%] cursor-pointer">
+        <div className="md:flex justify-around items-center md:space-x-5 space-y-5 md:space-y-0 w-[100%]">
+          <div className="relative w-[100%] md:w-[50%] cursor-pointer">
             <Tilt options={defaultOptions}>
               <Image
                 src="/experince-shape2.png"
@@ -43,7 +43,7 @@ const About = () => {
                 height={100000}
                 className="w-[100%] md:w-[80%] h-[100%] md:h-[80%]  circle2"
               />
-              <Box className="absolute top-1/2 md:-right-24 md:pr-20 left-1/2   transform -translate-x-1/2 -translate-y-1/2 w-[70%]">
+              <div className="absolute top-1/2 md:-right-24 md:pr-20 left-1/2   transform -translate-x-1/2 -translate-y-1/2 w-[70%]">
                 <Image
                   src="/vishu.jpeg"
                   alt="image"
@@ -51,14 +51,14 @@ const About = () => {
                   height={100000}
                   className="w-[100%] h-[100%] border-2 p-5 rounded-full "
                 />
-              </Box>
+              </div>
             </Tilt>
-          </Box>
-          <Box className="w-[100%] md:w-[50%] ">
-            <Typography className="font-extrabold text-xl">
+          </div>
+          <div className="w-[100%] md:w-[50%] ">
+            <p className="font-extrabold text-xl head">
               I am Vishu Sahu
-            </Typography>
-            <Typography>
+            </p>
+            <p className="para ">
               I am a dedicated Front-end & Backend web developer with a strong proficiency
               in HTML5, CSS, JavaScript, React.js, Redux Toolkit, Node.js , MongoDB , express.js. I am
               passionate about creating visually appealing and interactive user
@@ -70,13 +70,13 @@ const About = () => {
               technologies and tools, make me a valuable asset to any
               development team. I hold certifications in Python Bootcamp (2019)
               and Node.js and MongoDB (2020) from Udemy.
-            </Typography>
-            <Button className=" font-bold hover:bg-blue-400 bg-blue-500 text-white text-xs capitalize px-5 mt-10">
+            </p>
+            <button className=" font-bold hover:bg-blue-400 bg-blue-500 text-white text-xs capitalize px-5 py-2 mt-10 rounded-sm para">
               Download Cv
-            </Button>
-          </Box>
-        </Box>
-      </Box>
+            </button>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

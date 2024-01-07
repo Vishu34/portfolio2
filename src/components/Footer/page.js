@@ -1,18 +1,18 @@
 "use client";
 
 import { GitHub, Instagram, LinkedIn, WhatsApp } from "@mui/icons-material";
-import { Box, Button, Typography } from "@mui/material";
-import Image from "next/image";
+
+
 import Link from "next/link";
 
 
 const Footer = () => {
   return (
     <>
-      <Box className=" bg-sky-900 text-white   py-10 ">
-      <Box className="px-5 md:mx-auto w-[100%] md:w-[80%]  ">
-    <Typography className="font-bold text-xl text-center"> Vishu sahu</Typography>
-    <Box className="flex items-center  justify-center gap-5">
+      <div className=" bg-sky-900 text-white   py-10 ">
+      <div className="px-5 md:mx-auto w-[100%] md:w-[80%]  space-y-2">
+    <p className="font-bold text-xl text-center head"> Vishu sahu</p>
+    <div className="flex items-center  justify-center gap-5">
     <Link href="#"> <Instagram sx={{
         fontSize:"medium"
      }}/>  </Link>
@@ -25,11 +25,11 @@ const Footer = () => {
      <Link href="https://github.com/Vishu34/"> <GitHub sx={{
         fontSize:"medium"
      }}/>  </Link>
-    </Box>
+    </div>
    
-    <Typography className=" text-md text-center"> © vishu sahu. All rigths reserved</Typography>
-</Box>
-      </Box>
+    <p className=" text-md text-center para"> © vishu sahu. All rigths reserved</p>
+</div>
+      </div>
     </>
   );
 };

@@ -1,6 +1,6 @@
 "use client";
 import { Close, MoreVert } from "@mui/icons-material";
-import { Button, Typography } from "@mui/material";
+import { Button, p } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -42,7 +42,7 @@ const Mobilenavbar = () => {
           } `} style={{zIndex:"99999"}}
         >
           <div className="  flex justify-between items-center ">
-          <Typography className="font-extrabold text-xl"> Vishu Sahu</Typography>
+          <p className="font-extrabold text-xl head"> Vishu Sahu</p>
 
             <ul>
               <li
@@ -60,7 +60,7 @@ const Mobilenavbar = () => {
         {  topnav?  (
           <div className=" flex justify-between items-center transition-all ">
             <ul
-              className="flex-col items-center fixed top-0 left-0 mobilelist  h-[100%] bg-gray-100 w-[100%] p-5" style={{zIndex:"99999"}}
+              className="flex-col items-center fixed top-0 left-0 mobilelist  h-[100%] bg-gray-100 w-[100%] p-5 para font-bold" style={{zIndex:"99999"}}
             >
             <li  onClick={() => settopnav(false)} className="text-right"> 
             <Close className="hover:text-blue-500 " />
@@ -102,10 +102,9 @@ const Mobilenavbar = () => {
               
               
               <li className="navlist p-3  rounded-sm">
-              <Button className="hover:bg-blue-400 bg-blue-500 text-white text-sm capitalize px-5 py-2 font-bold">
-              
+              <button className=" font-bold hover:bg-blue-400 bg-blue-500 text-white text-xs capitalize px-5 py-2  rounded-sm para">
               Download Cv
-            </Button>
+            </button>
               </li>
             </ul>
           </div>

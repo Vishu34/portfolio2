@@ -1,7 +1,7 @@
 "use client";
 
 import { GitHub } from "@mui/icons-material";
-import { Box, List, ListItem, Typography } from "@mui/material";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Tilt } from "react-tilt";
@@ -23,8 +23,8 @@ import {motion} from "framer-motion"
 const Work = () => {
   return (
     <>
-      <Box className="px-5 md:mx-auto w-[100%] md:w-[80%] py-10 my-10" id="work">
-        <Box className="flex items-center space-x-2 justify-center">
+      <div className="px-5 md:mx-auto w-[100%] md:w-[80%] py-10 my-10" id="work">
+        <div className="flex items-center space-x-2 justify-center">
           <Image
              
             src="/badge-line.svg"
@@ -33,36 +33,36 @@ const Work = () => {
             height={10000}
             className="w-10 h-20"
           />
-          <Typography className="font-extrabold text-xl text-blue-500 py-3">
+          <p className="font-extrabold text-xl text-blue-500 py-3 head">
             Works
-          </Typography>
-        </Box>
+          </p>
+        </div>
 
-        <Box className="space-y-14">
-          <Box className="md:flex items-center md:space-x-5 space-y-5 md:space-y-0 ">
-            <motion.Box 
+        <div className="space-y-14">
+          <div className="md:flex items-center md:space-x-5 space-y-5 md:space-y-0 ">
+            <motion.div 
              initial={{x:-20}}
             whileInView={{x:0}}
             transition={{type:"spring", stiffness:"300" ,duration:"1"}}
             className=" w-[100%] md:w-[50%] space-y-2">
               <div className="space-y-2">
-                <Typography className="font-extrabold text-xl">
+                <p className="font-extrabold text-xl head">
                   Blog Clone-website 
-                </Typography>
+                </p>
 
                
                
-               <Box className="p-2">
-               <Typography>✅	Developed a blog website using Next.js, Node.js, and MongoDB, focusing on full CRUD operations. </Typography>
- <Typography>✅	Integrated React-Dropzone for file uploads and React-Share-Social for social media sharing. </Typography>
- <Typography>✅	Utilized Nodemailer for email functionality, JWT authentication, and Bcrypt.js for password hashing. </Typography>
-<Typography>✅	Implemented real-time comments using Socket.io, allowing any user to comment in real time. </Typography>
- <Typography>✅	Integrated a notification system to notify users about new comments and interactions.
-</Typography>
-               </Box>
+               <div className="p-2 para">
+               <p>✅	Developed a blog website using Next.js, Node.js, and MongoDB, focusing on full CRUD operations. </p>
+ <p>✅	Integrated React-Dropzone for file uploads and React-Share-Social for social media sharing. </p>
+ <p>✅	Utilized Nodemailer for email functionality, JWT authentication, and Bcrypt.js for password hashing. </p>
+<p>✅	Implemented real-time comments using Socket.io, allowing any user to comment in real time. </p>
+ <p>✅	Integrated a notification system to notify users about new comments and interactions.
+</p>
+               </div>
               
               </div>
-              <Typography className="flex items-center space-x-2 cursor-pointer text-blue-500 font-bold text-xs">
+              <p className="flex items-center space-x-2 cursor-pointer text-blue-500 font-bold text-xs para">
                 
                 Code
                 <GitHub
@@ -70,9 +70,9 @@ const Work = () => {
                     fontSize: "medium",
                   }}
                 />
-              </Typography>
-            </motion.Box>
-            <motion.Box
+              </p>
+            </motion.div>
+            <motion.div
              initial={{x:20}}
             whileInView={{x:0}}
             transition={{type:"spring", stiffness:"300" ,duration:"1"}}
@@ -88,11 +88,11 @@ const Work = () => {
                   className="w-[100%] h-[100%] rounded-xl border-2 border-blue-500"
                 /></Link>
               </Tilt>
-            </motion.Box>
-          </Box>
+            </motion.div>
+          </div>
 
-          <Box className="md:flex items-center md:space-x-5 space-y-5 md:space-y-0 ">
-            <motion.Box 
+          <div className="md:flex items-center md:space-x-5 space-y-5 md:space-y-0 ">
+            <motion.div 
              initial={{x:20}}
             whileInView={{x:0}}
             transition={{type:"spring", stiffness:"300" ,duration:"1"}}
@@ -107,28 +107,28 @@ const Work = () => {
                 />
                 </Link>
               </Tilt>
-            </motion.Box>
-            <motion.Box 
+            </motion.div>
+            <motion.div 
              initial={{x:20}}
             whileInView={{x:0}}
             transition={{type:"spring", stiffness:"300" ,duration:"1"}}
             className=" w-[100%] md:w-[50%] space-y-2">
-              <Box className="space-y-2">
-                <Typography className="font-extrabold text-xl">
+              <div className="space-y-2">
+                <p className="font-extrabold text-xl head">
                   E-commerce shopping clone
-                </Typography>
+                </p>
 
                 
-                <Box>
-                <Typography>✅	Developed an e-commerce website using MERN stack .
+                <div>
+                <p className="para">✅	Developed an e-commerce website using MERN stack .
 
 
-</Typography>
-<Typography>✅	Integrated Multer for file uploads and utilized Nodemailer for email functionality. </Typography>
-<Typography>✅	Implemented JWT authentication and Bcrypt.js for password hashing.</Typography>
-                </Box>
-              </Box>
-              <Typography className="flex items-center space-x-2 cursor-pointer text-blue-500 font-bold text-xs">
+</p>
+<p className="para">✅	Integrated Multer for file uploads and utilized Nodemailer for email functionality. </p>
+<p className="para">✅	Implemented JWT authentication and Bcrypt.js for password hashing.</p>
+                </div>
+              </div>
+              <p className="flex items-center space-x-2 cursor-pointer text-blue-500 font-bold text-xs para">
                 
                 Code
                 <GitHub
@@ -136,29 +136,29 @@ const Work = () => {
                     fontSize: "medium",
                   }}
                 />
-              </Typography>
-            </motion.Box>
-          </Box>
-          <Box className="md:flex items-center md:space-x-5 space-y-5 md:space-y-0 ">
-            <motion.Box 
+              </p>
+            </motion.div>
+          </div>
+          <div className="md:flex items-center md:space-x-5 space-y-5 md:space-y-0 ">
+            <motion.div 
              initial={{x:-20}}
             whileInView={{x:0}}
             transition={{type:"spring", stiffness:"300" ,duration:"1"}}
             className="w-[100%] md:w-[50%] space-y-2">
-              <Box className="space-y-2">
-                <Typography className="font-extrabold text-xl">
+              <div className="space-y-2">
+                <p className="font-extrabold text-xl head">
                   Meesho clone
-                </Typography>
+                </p>
 
                
-               <Box className="p-2">
-               <Typography>✅	Developed a Meesho landing page using React.js and Tailwind CSS. 
+               <div className="p-2 para">
+               <p>✅	Developed a Meesho landing page using React.js and Tailwind CSS. 
 
-</Typography>
-<Typography> ✅	Integrated login and signup validation.</Typography>
-               </Box>
-              </Box>
-              <Typography className="flex items-center space-x-2 cursor-pointer text-blue-500 font-bold text-xs">
+</p>
+<p> ✅	Integrated login and signup validation.</p>
+               </div>
+              </div>
+              <p className="flex items-center space-x-2 cursor-pointer text-blue-500 font-bold text-xs para">
                 
                 Code
                 <GitHub
@@ -166,9 +166,9 @@ const Work = () => {
                     fontSize: "medium",
                   }}
                 />
-              </Typography>
-            </motion.Box>
-            <motion.Box 
+              </p>
+            </motion.div>
+            <motion.div 
              initial={{x:20}}
             whileInView={{x:0}}
             transition={{type:"spring", stiffness:"300" ,duration:"1"}}
@@ -184,10 +184,10 @@ const Work = () => {
                 />
                 </Link>
               </Tilt>
-            </motion.Box>
-          </Box>
-          <Box className="md:flex items-center md:space-x-5 space-y-5 md:space-y-0 ">
-            <motion.Box 
+            </motion.div>
+          </div>
+          <div className="md:flex items-center md:space-x-5 space-y-5 md:space-y-0 ">
+            <motion.div 
              initial={{x:-20}}
             whileInView={{x:0}}
             transition={{type:"spring", stiffness:"300" ,duration:"1"}}
@@ -203,26 +203,26 @@ const Work = () => {
                 />
                 </Link>
               </Tilt>
-            </motion.Box>
-            <motion.Box 
+            </motion.div>
+            <motion.div 
              initial={{x:20}}
             whileInView={{x:0}}
             transition={{type:"spring", stiffness:"300" ,duration:"1"}}
             className="w-[100%] md:w-[50%] space-y-2">
-              <Box className="space-y-2">
-                <Typography className="font-extrabold text-xl">
+              <div className="space-y-2">
+                <p className="font-extrabold text-xl head">
                   Astrology landing page
-                </Typography>
+                </p>
 
                 
-                <Box>
-                <Typography>✅ Technology Stack: I utilized Next.js for building the astrology landing page, which allowed for server-side rendering and seamless page transitions. Framer Motion was employed to add smooth animations and transitions, enhancing the overall user experience.</Typography>
-<Typography>✅ Design: Tailwind CSS was used to style the landing page, providing a clean and modern aesthetic. The utility-first approach of Tailwind CSS enabled rapid prototyping and easy customization, resulting in a visually appealing and responsive design.</Typography>
+                <div>
+                <p className="para">✅ Technology Stack: I utilized Next.js for building the astrology landing page, which allowed for server-side rendering and seamless page transitions. Framer Motion was employed to add smooth animations and transitions, enhancing the overall user experience.</p>
+<p className="para">✅ Design: Tailwind CSS was used to style the landing page, providing a clean and modern aesthetic. The utility-first approach of Tailwind CSS enabled rapid prototyping and easy customization, resulting in a visually appealing and responsive design.</p>
 
-<Typography> ✅ Features: The landing page includes interactive elements and engaging animations powered by Framer Motion, creating an immersive experience for visitors. The use of Next.js facilitated efficient routing and ensured fast loading times, contributing to a seamless browsing experience.</Typography>
-                </Box>
-              </Box>
-              <Typography className="flex items-center space-x-2 cursor-pointer text-blue-500 font-bold text-xs">
+<p className="para"> ✅ Features: The landing page includes interactive elements and engaging animations powered by Framer Motion, creating an immersive experience for visitors. The use of Next.js facilitated efficient routing and ensured fast loading times, contributing to a seamless browsing experience.</p>
+                </div>
+              </div>
+              <p className="flex items-center space-x-2 cursor-pointer text-blue-500 font-bold text-xs para">
                 
                 Code
                 <GitHub
@@ -230,31 +230,31 @@ const Work = () => {
                     fontSize: "medium",
                   }}
                 />
-              </Typography>
-            </motion.Box>
-          </Box>
-          <Box className="md:flex items-center md:space-x-5 space-y-5 md:space-y-0 ">
-            <motion.Box 
+              </p>
+            </motion.div>
+          </div>
+          <div className="md:flex items-center md:space-x-5 space-y-5 md:space-y-0 ">
+            <motion.div 
              initial={{x:-20}}
             whileInView={{x:0}}
             transition={{type:"spring", stiffness:"300" ,duration:"1"}}
             className=" w-[100%] md:w-[50%] space-y-2">
-              <Box className="space-y-2">
-                <Typography className="font-extrabold text-xl">
+              <div className="space-y-2">
+                <p className="font-extrabold text-xl head">
                   jupiter landing page
-                </Typography>
+                </p>
 
-                <Box>
-                <Typography>
+                <div>
+                <p className="para">
               ✅  Technology Stack: Developed the Jupiter landing page using React.js for efficient component-based UI development. Leveraged Tailwind CSS for rapid styling and responsive design, enabling quick iteration and customization.
 
 
-                </Typography>
-                <Typography>✅ Responsive Design: Employed Tailwind CSS to ensure a mobile-first approach, enabling seamless responsiveness across various devices and screen sizes. Tailwind&apos;s utility classes facilitated the creation of a visually appealing and adaptable layout.</Typography>
-                <Typography>✅ Animations: Integrated Framer Motion to incorporate engaging animations and transitions, enhancing the visual appeal and interactivity of the landing page. Utilized Framer Motion&apos;s capabilities to create smooth and dynamic motion effects for a captivating user experience.</Typography>
-                </Box>
-              </Box>
-              <Typography className="flex items-center space-x-2 cursor-pointer text-blue-500 font-bold text-xs">
+                </p>
+                <p className="para">✅ Responsive Design: Employed Tailwind CSS to ensure a mobile-first approach, enabling seamless responsiveness across various devices and screen sizes. Tailwind&apos;s utility classes facilitated the creation of a visually appealing and adaptable layout.</p>
+                <p className="para">✅ Animations: Integrated Framer Motion to incorporate engaging animations and transitions, enhancing the visual appeal and interactivity of the landing page. Utilized Framer Motion&apos;s capabilities to create smooth and dynamic motion effects for a captivating user experience.</p>
+                </div>
+              </div>
+              <p className="flex items-center space-x-2 cursor-pointer text-blue-500 font-bold text-xs para">
                 
                 Code
                 <GitHub
@@ -262,9 +262,9 @@ const Work = () => {
                     fontSize: "medium",
                   }}
                 />
-              </Typography>
-            </motion.Box>
-            <motion.Box 
+              </p>
+            </motion.div>
+            <motion.div 
              initial={{x:20}}
             whileInView={{x:0}}
             transition={{type:"spring", stiffness:"300" ,duration:"1"}}
@@ -280,10 +280,10 @@ const Work = () => {
                 />
                 </Link>
               </Tilt>
-            </motion.Box>
-          </Box>
-        </Box>
-      </Box>
+            </motion.div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

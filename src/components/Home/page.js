@@ -1,7 +1,7 @@
 "use client";
 
 import { GitHub, Instagram, LinkedIn, WhatsApp } from "@mui/icons-material";
-import { Box, Button, Typography } from "@mui/material";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from 'react'
@@ -23,16 +23,16 @@ const defaultOptions = {
 const Home1 = () => {
   return (
     <>
-      <Box className="px-5 md:mx-auto w-[100%] md:w-[80%] py-10 " id="home">
-        <Box className="md:flex items-center md:space-x-5 space-y-5 md:space-y-0">
-          <Box className=" w-[100%] md:w-[50%] ">
-            <Box className="space-y-3">
-              <Typography className="text-5xl font-extrabold">Hi,</Typography>
-              <Typography className=" text-3xl sm:text-5xl font-extrabold">
+      <div className="px-5 md:mx-auto w-[100%] md:w-[80%] py-10 " id="home">
+        <div className="md:flex items-center md:space-x-5 space-y-5 md:space-y-0">
+          <div className=" w-[100%] md:w-[50%] ">
+            <div className="space-y-3">
+              <p className="text-5xl font-extrabold head">Hi,</p>
+              <p className=" text-3xl sm:text-5xl font-extrabold head">
                 I am
-                <span className="text-blue-500"> Vishu Sahu</span>
-              </Typography>
-              <Typography className=" text-3xl sm:text-5xl font-extrabold">
+                <span className="text-blue-500 head"> Vishu Sahu</span>
+              </p>
+              <p className=" text-3xl sm:text-5xl font-extrabold head">
               <Typewriter
             words={['React.Js Developer', 'Next.Js Developer', 'Mern Stack Developer']}
             loop="infinity"
@@ -43,16 +43,15 @@ const Home1 = () => {
             delaySpeed={1000}
             
           />
-              </Typography>
-            </Box>
+              </p>
+            </div>
            
-           <Box className="mt-10 space-y-3">
-           <Button className="hover:bg-blue-400 bg-blue-500 text-white text-sm capitalize px-10 py-2 font-bold">
-              
-              Contact
-            </Button>
+           <div className="mt-10 space-y-3">
+           <button className=" font-bold hover:bg-blue-400 bg-blue-500 text-white text-xs capitalize px-8 py-2 mt-10 rounded-sm para">
+             Contact
+            </button>
 
-            <Box className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3">
             <Link href="#"> <Instagram sx={{
         fontSize:"medium"
      }}/>  </Link>
@@ -65,18 +64,18 @@ const Home1 = () => {
      <Link href="https://github.com/Vishu34/"> <GitHub sx={{
         fontSize:"medium"
      }}/>  </Link>
-            </Box>
-           </Box>
-          </Box>
+            </div>
+           </div>
+          </div>
         
-          <Box className="w-[100%] md:w-[50%] relative cursor-pointer"> 
+          <div className="w-[100%] md:w-[50%] relative cursor-pointer"> 
           <Tilt options={defaultOptions}>
          
           <div className="mx-auto w-[100%] md:w-[80%] h-[100%] md:h-[80%]">
       <Image src="/about-shape1.png" alt="image" width={100000} height={100000} className=" mx-auto circle2"/>
     </div>
            
-           <Box className="absolute top-1/2 left-1/2  transform -translate-x-1/2 -translate-y-1/2 w-72 h-72">
+           <div className="absolute top-1/2 left-1/2  transform -translate-x-1/2 -translate-y-1/2 w-72 h-72">
            <Image
               src="/blog-1.jpg"
               alt="image"
@@ -84,13 +83,13 @@ const Home1 = () => {
               height={100000}
               className="w-[100%] h-[100%] border-2 p-5 rounded-full mx-auto"
             />
-           </Box>
+           </div>
            </Tilt>
-          </Box>
+          </div>
          
-        </Box>
+        </div>
        
-      </Box>
+      </div>
     </>
   );
 };

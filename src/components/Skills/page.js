@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Typography } from "@mui/material";
+
 import Image from "next/image";
 import { Tilt } from "react-tilt";
 
@@ -21,8 +21,8 @@ import {motion} from 'framer-motion'
 const Skills = () => {
   return (
     <>
-      <Box className="px-5 md:mx-auto w-[100%] md:w-[80%] py-10  my-10" id="skill">
-        <Box className="flex items-center space-x-2 justify-center">
+      <div className="px-5 md:mx-auto w-[100%] md:w-[80%] py-10  my-10" id="skill">
+        <div className="flex items-center space-x-2 justify-center">
           <Image
             src="/badge-line.svg"
             alt="image"
@@ -30,12 +30,12 @@ const Skills = () => {
             height={10000}
             className="w-10 h-20"
           />
-          <Typography className="font-extrabold text-xl text-blue-500 py-3">
+          <p className="font-extrabold text-xl text-blue-500 py-3 head">
             Skills
-          </Typography>
-        </Box>
-        <Box className="md:flex items-center md:space-x-5 space-y-5 ">
-          <motion.Box 
+          </p>
+        </div>
+        <div className="md:flex items-center md:space-x-5 space-y-5 ">
+          <motion.div 
           initial={{x:20}}
             whileInView={{x:0}}
             transition={{type:"spring", stiffness:"300" ,duration:"1"}}
@@ -49,26 +49,26 @@ const Skills = () => {
                 className="w-[100%] h-[100%]"
               />
             </Tilt>
-          </motion.Box>
-          <motion.Box 
+          </motion.div>
+          <motion.div 
           initial={{x:-20}}
             whileInView={{x:0}}
             transition={{type:"spring", stiffness:"300" ,duration:"1"}}
           className="w-[100%]">
-            <Typography className="font-extrabold text-xl">
+            <p className="font-extrabold text-xl head">
               
               Profesional Skills
-            </Typography>
+            </p>
 
-            <Typography>
+            <p className="para">
               Resourceful professional with successful track record in
               developing innovative web designs and features. Possesses solid
               knowledge of HTML, CSS, JavaScript,React and Bootstrap , tailwind css , Nodejs , Nextjs , MongoDB , express with
               ability to quickly learn new technologies.
-            </Typography>
-            <Box className=" relative grid grid-cols-2 lg:grid-cols-4 md:grid-cols-2 items-center mt-5 gap-8 md:gap-5 process">
-              <Box className=" space-y-5 border-t-4 border-blue-500 drop-shadow-xl rounded-md p-3">
-                <Box className=" relative w-20 ">
+            </p>
+            <div className=" relative grid grid-cols-2 lg:grid-cols-4 md:grid-cols-2 items-center mt-5 gap-8 md:gap-5 process">
+              <div className=" space-y-5 border-t-4 border-blue-500 drop-shadow-xl rounded-md p-3">
+                <div className=" relative w-20 ">
                   <Image
                     src="/proces4.png"
                     alt="image"
@@ -84,13 +84,13 @@ const Skills = () => {
                     className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
              w-10 h-10 rounded-full"
                   />
-                </Box>
-                <Typography className="font-bold ">Node js</Typography>
-                <Typography className="text-xs">ability to quickly learn new technology</Typography>
-              </Box>
+                </div>
+                <p className="font-bold head">Node js</p>
+                <p className="text-xs para">ability to quickly learn new technology</p>
+              </div>
 
-              <Box className=" space-y-3 border-t-4 border-blue-500 drop-shadow-xl rounded-md p-3">
-                <Box className=" relative w-20 ">
+              <div className=" space-y-3 border-t-4 border-blue-500 drop-shadow-xl rounded-md p-3">
+                <div className=" relative w-20 ">
                   <Image
                     src="/proces1.png"
                     alt="image"
@@ -106,13 +106,13 @@ const Skills = () => {
                     className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
              w-10 h-10 rounded-full"
                   />
-                </Box>
-                <Typography className="font-bold ">MongoDB</Typography>
-                <Typography className="text-xs">ability to quickly learn new technology</Typography>
-              </Box>
+                </div>
+                <p className="font-bold head">MongoDB</p>
+                <p className="text-xs para">ability to quickly learn new technology</p>
+              </div>
 
-              <Box className=" space-y-3 border-t-4 border-blue-500 drop-shadow-xl rounded-md p-3">
-                <Box className=" relative w-20 ">
+              <div className=" space-y-3 border-t-4 border-blue-500 drop-shadow-xl rounded-md p-3">
+                <div className=" relative w-20 ">
                   <Image
                     src="/proces2.png"
                     alt="image"
@@ -128,13 +128,13 @@ const Skills = () => {
                     className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
              w-10 h-10 rounded-full"
                   />
-                </Box>
-                <Typography className="font-bold ">Next js</Typography>
-                <Typography className="text-xs">ability to quickly learn new technology</Typography>
-              </Box>
+                </div>
+                <p className="font-bold head">Next js</p>
+                <p className="text-xs para">ability to quickly learn new technology</p>
+              </div>
 
-              <Box className=" space-y-3 border-t-4 border-blue-500 drop-shadow-xl rounded-md p-3 ">
-                <Box className=" relative w-20 ">
+              <div className=" space-y-3 border-t-4 border-blue-500 drop-shadow-xl rounded-md p-3 ">
+                <div className=" relative w-20 ">
                   <Image
                     src="/proces3.png"
                     alt="image"
@@ -150,14 +150,14 @@ const Skills = () => {
                     className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
              w-10 h-10 rounded-full"
                   />
-                </Box>
-                <Typography className="font-bold ">React js</Typography>
-                <Typography className="text-xs">ability to quickly learn new technology</Typography>
-              </Box>
-            </Box>
-          </motion.Box>
-        </Box>
-      </Box>
+                </div>
+                <p className="font-bold head">React js</p>
+                <p className="text-xs para">ability to quickly learn new technology</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
     </>
   );
 };
