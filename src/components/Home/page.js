@@ -32,7 +32,7 @@ const Home1 = () => {
                 I am
                 <span className="text-blue-500 head"> Vishu Sahu</span>
               </p>
-              <p className=" text-3xl sm:text-5xl font-extrabold head">
+              <p className=" text-3xl sm:text-5xl  head">
               <Typewriter
             words={['React.Js Developer', 'Next.Js Developer', 'Mern Stack Developer']}
             loop="infinity"

@@ -2,6 +2,7 @@
 
 
 import Image from "next/image";
+import Link from "next/link";
 import { Tilt } from "react-tilt";
 
 const defaultOptions = {
@@ -71,8 +72,11 @@ const About = () => {
               development team. I hold certifications in Python Bootcamp (2019)
               and Node.js and MongoDB (2020) from Udemy.
             </p>
+
+
             <button className=" font-bold hover:bg-blue-400 bg-blue-500 text-white text-xs capitalize px-5 py-2 mt-10 rounded-sm para">
-              Download Cv
+              <Link download="cv" href="cv.pdf">Download Cv </Link>
+              
             </button>
           </div>
         </div>

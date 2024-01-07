@@ -45,23 +45,24 @@ const Desktopnavbar = () => {
                
               </li>
               <li className="navlist p-3 rounded-sm">
-              <Link href="#" className="hover:text-blue-500">About</Link>
+              <Link href="#about" className="hover:text-blue-500">About</Link>
               </li>
               <li className="navlist p-3 rounded-sm">
-              <Link href="#" className="hover:text-blue-500">Skills</Link>
+              <Link href="#skill" className="hover:text-blue-500">Skills</Link>
               </li>
               <li className="navlist p-3 rounded-sm bloglist">
-                <Link href="#" className="hover:text-blue-500">Works</Link>
+                <Link href="#work" className="hover:text-blue-500">Works</Link>
                 
               </li>
              
               
               <li className="navlist p-3 rounded-sm">
-               <Link href="#" className="hover:text-blue-500">Contact</Link>
+               <Link href="#contact" className="hover:text-blue-500">Contact</Link>
               </li>
               <li className="navlist p-3 rounded-sm">
               <button className=" font-bold hover:bg-blue-400 bg-blue-500 text-white text-xs capitalize px-5 py-2  rounded-sm para">
-              Download Cv
+              <Link download="cv" href="cv.pdf">Download Cv </Link>
+              
             </button>
               </li>
             </ul>
