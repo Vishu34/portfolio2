@@ -1,6 +1,6 @@
 "use client";
 
-import { GitHub } from "@mui/icons-material";
+import { Done, GitHub } from "@mui/icons-material";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -52,14 +52,14 @@ const Work = () => {
 
                
                
-               <div className="p-2 para">
-               <p>✅	Developed a blog website using Next.js, Node.js, and MongoDB, focusing on full CRUD operations. </p>
- <p>✅	Integrated React-Dropzone for file uploads and React-Share-Social for social media sharing. </p>
- <p>✅	Utilized Nodemailer for email functionality, JWT authentication, and Bcrypt.js for password hashing. </p>
-<p>✅	Implemented real-time comments using Socket.io, allowing any user to comment in real time. </p>
- <p>✅	Integrated a notification system to notify users about new comments and interactions.
-</p>
-               </div>
+               <ul className="p-2 para space-y-1">
+               <li> <Done sx={{fontSize:"small " , fontWeight:900}} className="font-extrabold text-blue-500"/> 	Developed a blog website using Next.js, Node.js, and MongoDB, focusing on full CRUD operations. </li>
+ <li> <Done sx={{fontSize:"small " , fontWeight:900}} className="font-extrabold text-blue-500"/> 	Integrated React-Dropzone for file uploads and React-Share-Social for social media sharing. </li>
+ <li> <Done sx={{fontSize:"small " , fontWeight:900}} className="font-extrabold text-blue-500"/> 	Utilized Nodemailer for email functionality, JWT authentication, and Bcrypt.js for password hashing. </li>
+<li> <Done sx={{fontSize:"small " , fontWeight:900}} className="font-extrabold text-blue-500"/> 	Implemented real-time comments using Socket.io, allowing any user to comment in real time. </li>
+ <li> <Done sx={{fontSize:"small " , fontWeight:900}} className="font-extrabold text-blue-500"/> 	Integrated a notification system to notify users about new comments and interactions.
+</li>
+               </ul>
               
               </div>
               <p className="flex items-center space-x-2 cursor-pointer text-blue-500 font-bold text-xs para">
@@ -119,14 +119,14 @@ const Work = () => {
                 </p>
 
                 
-                <div>
-                <p className="para">✅	Developed an e-commerce website using MERN stack .
+                <ul className="para">
+                <li> <Done sx={{fontSize:"small " , fontWeight:900}} className="font-extrabold text-blue-500"/> 	Developed an e-commerce website using MERN stack .
 
 
-</p>
-<p className="para">✅	Integrated Multer for file uploads and utilized Nodemailer for email functionality. </p>
-<p className="para">✅	Implemented JWT authentication and Bcrypt.js for password hashing.</p>
-                </div>
+</li>
+<li> <Done sx={{fontSize:"small " , fontWeight:900}} className="font-extrabold text-blue-500"/> 	Integrated Multer for file uploads and utilized Nodemailer for email functionality. </li>
+<li> <Done sx={{fontSize:"small " , fontWeight:900}} className="font-extrabold text-blue-500"/> 	Implemented JWT authentication and Bcrypt.js for password hashing.</li>
+                </ul>
               </div>
               <p className="flex items-center space-x-2 cursor-pointer text-blue-500 font-bold text-xs para">
                 
@@ -151,12 +151,12 @@ const Work = () => {
                 </p>
 
                
-               <div className="p-2 para">
-               <p>✅	Developed a Meesho landing page using React.js and Tailwind CSS. 
+               <ul className="p-2 para space-y-1">
+               <p> <Done sx={{fontSize:"small " , fontWeight:900}} className="font-extrabold text-blue-500"/> 	Developed a Meesho landing page using React.js and Tailwind CSS. 
 
 </p>
-<p> ✅	Integrated login and signup validation.</p>
-               </div>
+<p>  <Done sx={{fontSize:"small " , fontWeight:900}} className="font-extrabold text-blue-500"/> 	Integrated login and signup validation.</p>
+               </ul>
               </div>
               <p className="flex items-center space-x-2 cursor-pointer text-blue-500 font-bold text-xs para">
                 
@@ -215,12 +215,12 @@ const Work = () => {
                 </p>
 
                 
-                <div>
-                <p className="para">✅ Technology Stack: I utilized Next.js for building the astrology landing page, which allowed for server-side rendering and seamless page transitions. Framer Motion was employed to add smooth animations and transitions, enhancing the overall user experience.</p>
-<p className="para">✅ Design: Tailwind CSS was used to style the landing page, providing a clean and modern aesthetic. The utility-first approach of Tailwind CSS enabled rapid prototyping and easy customization, resulting in a visually appealing and responsive design.</p>
+                <ul className="para">
+                <li> <Done sx={{fontSize:"small " , fontWeight:900}} className="font-extrabold text-blue-500"/>  Technology Stack: I utilized Next.js for building the astrology landing page, which allowed for server-side rendering and seamless page transitions. Framer Motion was employed to add smooth animations and transitions, enhancing the overall user experience.</li>
+<li> <Done sx={{fontSize:"small " , fontWeight:900}} className="font-extrabold text-blue-500"/>  Design: Tailwind CSS was used to style the landing page, providing a clean and modern aesthetic. The utility-first approach of Tailwind CSS enabled rapid prototyping and easy customization, resulting in a visually appealing and responsive design.</li>
 
-<p className="para"> ✅ Features: The landing page includes interactive elements and engaging animations powered by Framer Motion, creating an immersive experience for visitors. The use of Next.js facilitated efficient routing and ensured fast loading times, contributing to a seamless browsing experience.</p>
-                </div>
+<li>  <Done sx={{fontSize:"small " , fontWeight:900}} className="font-extrabold text-blue-500"/>  Features: The landing page includes interactive elements and engaging animations powered by Framer Motion, creating an immersive experience for visitors. The use of Next.js facilitated efficient routing and ensured fast loading times, contributing to a seamless browsing experience.</li>
+                </ul>
               </div>
               <p className="flex items-center space-x-2 cursor-pointer text-blue-500 font-bold text-xs para">
                 
@@ -244,15 +244,15 @@ const Work = () => {
                   jupiter landing page
                 </p>
 
-                <div>
-                <p className="para">
-              ✅  Technology Stack: Developed the Jupiter landing page using React.js for efficient component-based UI development. Leveraged Tailwind CSS for rapid styling and responsive design, enabling quick iteration and customization.
+                <ul className="para">
+                <li>
+               <Done sx={{fontSize:"small " , fontWeight:900}} className="font-extrabold text-blue-500"/>   Technology Stack: Developed the Jupiter landing page using React.js for efficient component-based UI development. Leveraged Tailwind CSS for rapid styling and responsive design, enabling quick iteration and customization.
 
 
-                </p>
-                <p className="para">✅ Responsive Design: Employed Tailwind CSS to ensure a mobile-first approach, enabling seamless responsiveness across various devices and screen sizes. Tailwind&apos;s utility classes facilitated the creation of a visually appealing and adaptable layout.</p>
-                <p className="para">✅ Animations: Integrated Framer Motion to incorporate engaging animations and transitions, enhancing the visual appeal and interactivity of the landing page. Utilized Framer Motion&apos;s capabilities to create smooth and dynamic motion effects for a captivating user experience.</p>
-                </div>
+                </li>
+                <li> <Done sx={{fontSize:"small " , fontWeight:900}} className="font-extrabold text-blue-500"/>  Responsive Design: Employed Tailwind CSS to ensure a mobile-first approach, enabling seamless responsiveness across various devices and screen sizes. Tailwind&apos;s utility classes facilitated the creation of a visually appealing and adaptable layout.</li>
+                <li> <Done sx={{fontSize:"small " , fontWeight:900}} className="font-extrabold text-blue-500"/>  Animations: Integrated Framer Motion to incorporate engaging animations and transitions, enhancing the visual appeal and interactivity of the landing page. Utilized Framer Motion&apos;s capabilities to create smooth and dynamic motion effects for a captivating user experience.</li>
+                </ul>
               </div>
               <p className="flex items-center space-x-2 cursor-pointer text-blue-500 font-bold text-xs para">
                 
