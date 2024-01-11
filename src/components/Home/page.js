@@ -26,13 +26,13 @@ const Home1 = () => {
       <div className="px-5 md:mx-auto w-[100%] md:w-[80%] py-10 " id="home">
         <div className="md:flex items-center md:space-x-5 space-y-5 md:space-y-0">
           <div className=" w-[100%] md:w-[50%] ">
-            <div className="space-y-3">
+            <div className="space-y-3 h-44 md:h-[100%] lg:h-44">
               <p className="text-5xl font-extrabold head">Hi,</p>
-              <p className=" text-3xl sm:text-5xl font-extrabold head">
+              <p className=" text-4xl sm:text-5xl font-extrabold head">
                 I am
                 <span className="text-blue-500 head"> Vishu Sahu</span>
               </p>
-              <p className=" text-3xl sm:text-5xl  head">
+              <p className=" text-4xl sm:text-5xl  head">
               <Typewriter
             words={['React.Js Developer', 'Next.Js Developer', 'Mern Stack Developer']}
             loop="infinity"
