@@ -25,6 +25,13 @@ const Desktopnavbar = () => {
   useEffect(() => {
     window.addEventListener("scroll", navbar);
   }, []);
+
+
+  const [active ,setactive]=useState("Home")
+  const handleclick=(event)=>{
+    setactive(event)
+  }
+
   return (
     <>  
       <section className=" desktop cursor-pointer text-black ">
@@ -41,23 +48,23 @@ const Desktopnavbar = () => {
 
             <ul className="flex items-center space-x-6 para font-bold">
               <li className="navlist p-3 rounded-sm homelist">
-              <Link href="#" className="hover:text-blue-500">Home</Link>
+              <Link href="#" className={`hover:text-blue-500 ${active ==="Home" ? "text-blue-500 border-b-2 border-blue-500" : "text-black"}`} onClick={()=>handleclick("Home")}>Home</Link>
                
               </li>
               <li className="navlist p-3 rounded-sm">
-              <Link href="#about" className="hover:text-blue-500">About</Link>
+              <Link href="#about" className={`hover:text-blue-500 ${active ==="About" ? "text-blue-500 border-b-2 border-blue-500" : "text-black"}`} onClick={()=>handleclick("About")}>About</Link>
               </li>
               <li className="navlist p-3 rounded-sm">
-              <Link href="#skill" className="hover:text-blue-500">Skills</Link>
+              <Link href="#skill" className={`hover:text-blue-500 ${active ==="Skills" ? "text-blue-500 border-b-2 border-blue-500" : "text-black"}`} onClick={()=>handleclick("Skills")}>Skills</Link>
               </li>
               <li className="navlist p-3 rounded-sm bloglist">
-                <Link href="#work" className="hover:text-blue-500">Works</Link>
+                <Link href="#work" className={`hover:text-blue-500 ${active ==="Worrks" ? "text-blue-500 border-b-2 border-blue-500" : "text-black"}`} onClick={()=>handleclick("Works")}>Works</Link>
                 
               </li>
              
               
               <li className="navlist p-3 rounded-sm">
-               <Link href="#contact" className="hover:text-blue-500">Contact</Link>
+               <Link href="#contact" className={`hover:text-blue-500 ${active ==="Contact" ? "text-blue-500 border-b-2 border-blue-500" : "text-black"}`} onClick={()=>handleclick("Contact")}>Contact</Link>
               </li>
               <li className="navlist p-3 rounded-sm">
               <button className=" font-bold hover:bg-blue-400 bg-blue-500 text-white text-xs capitalize px-5 py-2  rounded-sm para">
