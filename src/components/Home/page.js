@@ -52,13 +52,13 @@ const Home1 = () => {
             </button>
 
             <div className="flex items-center space-x-3">
-            <Link href="#"> <Instagram sx={{
+            <Link href="https://www.instagram.com/vishu_jsk?igsh=YW91bnF2bXBvdTMx"> <Instagram sx={{
         fontSize:"medium"
      }}/>  </Link>
      <Link href="https://wa.me/9644111432"> <WhatsApp sx={{
         fontSize:"medium"
      }}/>  </Link>
-     <Link href="https://www.linkedin.com/in/vishu-sahu-307850265/"> <LinkedIn sx={{
+     <Link href="https://www.linkedin.com/in/vishu-jsr-307850265/"> <LinkedIn sx={{
         fontSize:"medium"
      }}/>  </Link>
      <Link href="https://github.com/Vishu34/"> <GitHub sx={{
