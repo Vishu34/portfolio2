@@ -98,63 +98,8 @@ const Work = () => {
           </div>
 
 
-        <div className="md:flex items-center md:space-x-5 space-y-5 md:space-y-0 ">
-            <motion.div
-              initial={{ x: -20 }}
-              whileInView={{ x: 0 }}
-              transition={{ type: "spring", stiffness: "300", duration: "1" }}
-              className="w-[100%] md:w-[50%] space-y-2"
-            >
-              <div className="space-y-2">
-                <p className="font-extrabold text-xl head">logicgyan (provide jobs and placements)</p>
-
-                <ul className="p-2 para space-y-1">
-                  <p>
-                    {" "}
-                    <Done
-                      sx={{ fontSize: "small ", fontWeight: 900 }}
-                      className="font-extrabold text-blue-500"
-                    />{" "}
-                   Provides the placements and jobs have utilized React js 
-                  </p>
-                  <p>
-                    {" "}
-                    <Done
-                      sx={{ fontSize: "small ", fontWeight: 900 }}
-                      className="font-extrabold text-blue-500"
-                    />{" "}
-                    Integrated login and signup validation.
-                  </p>
-                </ul>
-              </div>
-              <p className="flex items-center space-x-2 cursor-pointer text-blue-500 font-bold text-xs para">
-                Code
-                <GitHub
-                  sx={{
-                    fontSize: "medium",
-                  }}
-                />
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ x: 20 }}
-              whileInView={{ x: 0 }}
-              transition={{ type: "spring", stiffness: "300", duration: "1" }}
-              className="w-[100%] md:w-[50%]  cursor-pointer"
-            >
-              <Tilt options={defaultOptions}>
-                <Link href="">
-                  <Image
-                    alt="image"
-                    src="/logic.png"
-                    width={10000}
-                    height={100000}
-                    className="w-[100%] h-[100%] rounded-xl border-2 border-blue-500"
-                  />
-                </Link>
-              </Tilt>
-            </motion.div>
-            </div>
+      
+          
 
 
             <div className="md:flex items-center md:space-x-5 space-y-5 md:space-y-0 ">
