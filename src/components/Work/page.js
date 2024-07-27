@@ -42,9 +42,55 @@ const Work = () => {
           </p>
         </div>
 
+
+
+       
+
+          
+
+
+{/* -0987654321234567890- */}
+
+        <div className="space-y-14">
+
         <div className="md:flex items-center md:space-x-5 space-y-5 md:space-y-0 ">
             <motion.div
               initial={{ x: -20 }}
+              whileInView={{ x: 0 }}
+              transition={{ type: "spring", stiffness: "300", duration: "1" }}
+              className=" w-[100%] md:w-[50%] space-y-2"
+            >
+              <div className="space-y-2">
+                <p className="font-extrabold text-xl head">
+                kkmodi university landing page
+                </p>
+
+                <ul className="p-2 para space-y-1">
+                  <li>
+                    {" "}
+                    <Done
+                      sx={{ fontSize: "small ", fontWeight: 900 }}
+                      className="font-extrabold text-blue-500"
+                    />{" "}
+                      KK Modi University - Best Private University in Chhattisgarh, India offering a life of purpose & happiness through all-round development
+                  </li>
+                  
+                 
+                 
+                 
+                </ul>
+              </div>
+              <p className="flex items-center space-x-2 cursor-pointer text-blue-500 font-bold text-xs para">
+                Code
+                <GitHub
+                  sx={{
+                    fontSize: "medium",
+                  }}
+                />
+              </p>
+            </motion.div>
+            <motion.div
+              initial={{ x: 20 }}
               whileInView={{ x: 0 }}
               transition={{ type: "spring", stiffness: "300", duration: "1" }}
               className="w-[100%] md:w-[50%]  cursor-pointer"
@@ -61,43 +107,9 @@ const Work = () => {
                 </Link>
               </Tilt>
             </motion.div>
-            <motion.div
-              initial={{ x: 20 }}
-              whileInView={{ x: 0 }}
-              transition={{ type: "spring", stiffness: "300", duration: "1" }}
-              className="w-[100%] md:w-[50%] space-y-2"
-            >
-              <div className="space-y-2">
-                <p className="font-extrabold text-xl head">
-                  kkmodi university landing page
-                </p>
-
-                <ul className="para">
-                  <li>
-                    {" "}
-                    <Done
-                      sx={{ fontSize: "small ", fontWeight: 900 }}
-                      className="font-extrabold text-blue-500"
-                    />{" "}
-                 KK Modi University - Best Private University in Chhattisgarh, India offering a life of purpose & happiness through all-round development
-                  </li>
-                 
-
-                 
-                </ul>
-              </div>
-              <p className="flex items-center space-x-2 cursor-pointer text-blue-500 font-bold text-xs para">
-                Code
-                <GitHub
-                  sx={{
-                    fontSize: "medium",
-                  }}
-                />
-              </p>
-            </motion.div>
           </div>
 
-
+       
       
           
 
@@ -160,13 +172,7 @@ const Work = () => {
           </div>
 
 
-
-          
-
-
-{/* -0987654321234567890- */}
-
-        <div className="space-y-14">
+        
           <div className="md:flex items-center md:space-x-5 space-y-5 md:space-y-0 ">
             <motion.div
               initial={{ x: -20 }}
