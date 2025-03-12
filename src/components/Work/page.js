@@ -549,6 +549,91 @@ const Work = () => {
               </Tilt>
             </motion.div>
           </div>
+
+
+ <div className="md:flex items-center md:space-x-5 space-y-5 md:space-y-0 ">
+            <motion.div
+              initial={{ x: -20 }}
+              whileInView={{ x: 0 }}
+              transition={{ type: "spring", stiffness: "300", duration: "1" }}
+              className="w-[100%] md:w-[50%]  cursor-pointer"
+            >
+              <Tilt options={defaultOptions}>
+                <Link href="https://project1-blue-seven.vercel.app/">
+                  <Image
+                    alt="image"
+                    src="/cunsult.png"
+                    width={10000}
+                    height={100000}
+                    className="w-[100%] h-[100%] rounded-xl border-2 border-blue-500"
+                  />
+                </Link>
+              </Tilt>
+            </motion.div>
+            <motion.div
+              initial={{ x: 20 }}
+              whileInView={{ x: 0 }}
+              transition={{ type: "spring", stiffness: "300", duration: "1" }}
+              className="w-[100%] md:w-[50%] space-y-2"
+            >
+              <div className="space-y-2">
+                <p className="font-extrabold text-xl head">
+                  Consult landing page
+                </p>
+
+                <ul className="para">
+                  <li>
+                    {" "}
+                    <Done
+                      sx={{ fontSize: "small ", fontWeight: 900 }}
+                      className="font-extrabold text-blue-500"
+                    />{" "}
+                    Technology Stack: I utilized Next.js for building the
+                     landing page.
+                  </li>
+                  <li>
+                    {" "}
+                    <Done
+                      sx={{ fontSize: "small ", fontWeight: 900 }}
+                      className="font-extrabold text-blue-500"
+                    />{" "}
+                    Design: Tailwind CSS was used to style the landing page,
+                    providing a clean and modern aesthetic. The utility-first
+                    approach of Tailwind CSS enabled rapid prototyping and easy
+                    customization, resulting in a visually appealing and
+                    responsive design.
+                  </li>
+
+                  <li>
+                    {" "}
+                    <Done
+                      sx={{ fontSize: "small ", fontWeight: 900 }}
+                      className="font-extrabold text-blue-500"
+                    />{" "}
+                    Features: The landing page includes interactive elements and
+                    engaging animations powered by Framer Motion, creating an
+                    immersive experience for visitors. The use of Next.js
+                    facilitated efficient routing and ensured fast loading
+                    times, contributing to a seamless browsing experience.
+                  </li>
+                </ul>
+              </div>
+              <p className="flex items-center space-x-2 cursor-pointer text-blue-500 font-bold text-xs para">
+                Code
+                <GitHub
+                  sx={{
+                    fontSize: "medium",
+                  }}
+                />
+              </p>
+            </motion.div>
+          </div>
+
+
+
+
+
+                      
         </div>
       </div>
     </>
